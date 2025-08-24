@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f9f9f9;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+.cards.row {
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    background: #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Kart genişliği 200 piksel olarak güncellendi ve zorlandı */
+    width: 268px !important;
+    height: 375px; /* Yükseklik aynı kaldı */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.badge-sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.icons {
+    color: #ffc107;
+    margin-bottom: 5px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.text-muted {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-color: black !important;
+    color: black !important;
+}
+
+.btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
